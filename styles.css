@@ -1,0 +1,621 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+/* Navigation */
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+nav h1 {
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    color: #fff;
+    background-color: #FF8C00;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #FF8C00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #e07b00;
+}
+
+/* Product Section */
+.products-section {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.products-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.product-item p {
+    font-size: 20px;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+/* Contact Section */
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.contact-section p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form, .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Shop Section */
+.shop-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.shop-section h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.product-link {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.product-link:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+/* Navigation */
+header {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+nav h1 {
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #FF8C00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #e07b00;
+}
+
+/* Product Section */
+.products-section {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.products-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.product-link {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.product-link:hover {
+    background-color: #45a049;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form, .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Herbal Oil Benefits Section */
+.herbal-oil-benefits {
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.herbal-oil-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.herbal-oil-benefits li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Herbal Oil Products Section */
+.herbal-oil-products {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.herbal-oil-products h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cart-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Stomach Problem Benefits Section */
+.stomach-problem-benefits {
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.stomach-problem-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.stomach-problem-benefits li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Stomach Problem Products Section */
+.stomach-problem-products {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.stomach-problem-products h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
